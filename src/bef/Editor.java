@@ -81,12 +81,12 @@ public class Editor extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         tfLargura = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
-        btCaneta2 = new javax.swing.JButton();
-        btCaneta3 = new javax.swing.JButton();
-        btCaneta4 = new javax.swing.JButton();
-        btCaneta5 = new javax.swing.JButton();
-        btCaneta6 = new javax.swing.JButton();
-        btCaneta7 = new javax.swing.JButton();
+        btCanetaAmarelo = new javax.swing.JButton();
+        btCanetaVerde = new javax.swing.JButton();
+        btCanetaBranca = new javax.swing.JButton();
+        btCanetaAzul = new javax.swing.JButton();
+        btCanetaPreta = new javax.swing.JButton();
+        btCanetaVermelha = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         tfTamanhoPonta = new javax.swing.JTextField();
@@ -244,59 +244,69 @@ public class Editor extends javax.swing.JFrame {
             }
         });
 
-        btCaneta2.setBackground(new java.awt.Color(255, 255, 0));
-        btCaneta2.setForeground(new java.awt.Color(255, 51, 51));
-        btCaneta2.addActionListener(new java.awt.event.ActionListener() {
+        btCanetaAmarelo.setBackground(new java.awt.Color(255, 255, 0));
+        btCanetaAmarelo.setForeground(new java.awt.Color(255, 51, 51));
+        btCanetaAmarelo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCaneta2ActionPerformed(evt);
+                btCanetaAmareloActionPerformed(evt);
             }
         });
 
-        btCaneta3.setBackground(new java.awt.Color(0, 204, 51));
-        btCaneta3.setForeground(new java.awt.Color(255, 51, 51));
-        btCaneta3.addActionListener(new java.awt.event.ActionListener() {
+        btCanetaVerde.setBackground(new java.awt.Color(0, 204, 51));
+        btCanetaVerde.setForeground(new java.awt.Color(255, 51, 51));
+        btCanetaVerde.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCaneta3ActionPerformed(evt);
+                btCanetaVerdeActionPerformed(evt);
             }
         });
 
-        btCaneta4.setBackground(new java.awt.Color(255, 255, 255));
-        btCaneta4.setForeground(new java.awt.Color(255, 51, 51));
-        btCaneta4.addActionListener(new java.awt.event.ActionListener() {
+        btCanetaBranca.setBackground(new java.awt.Color(255, 255, 255));
+        btCanetaBranca.setForeground(new java.awt.Color(255, 51, 51));
+        btCanetaBranca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCaneta4ActionPerformed(evt);
+                btCanetaBrancaActionPerformed(evt);
             }
         });
 
-        btCaneta5.setBackground(new java.awt.Color(0, 0, 255));
-        btCaneta5.setForeground(new java.awt.Color(255, 51, 51));
-        btCaneta5.addActionListener(new java.awt.event.ActionListener() {
+        btCanetaAzul.setBackground(new java.awt.Color(0, 0, 255));
+        btCanetaAzul.setForeground(new java.awt.Color(255, 51, 51));
+        btCanetaAzul.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCaneta5ActionPerformed(evt);
+                btCanetaAzulActionPerformed(evt);
             }
         });
 
-        btCaneta6.setBackground(new java.awt.Color(0, 0, 0));
-        btCaneta6.setForeground(new java.awt.Color(255, 51, 51));
-        btCaneta6.addActionListener(new java.awt.event.ActionListener() {
+        btCanetaPreta.setBackground(new java.awt.Color(0, 0, 0));
+        btCanetaPreta.setForeground(new java.awt.Color(255, 51, 51));
+        btCanetaPreta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCaneta6ActionPerformed(evt);
+                btCanetaPretaActionPerformed(evt);
             }
         });
 
-        btCaneta7.setBackground(new java.awt.Color(255, 0, 0));
-        btCaneta7.setForeground(new java.awt.Color(255, 51, 51));
-        btCaneta7.addActionListener(new java.awt.event.ActionListener() {
+        btCanetaVermelha.setBackground(new java.awt.Color(255, 0, 0));
+        btCanetaVermelha.setForeground(new java.awt.Color(255, 51, 51));
+        btCanetaVermelha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btCaneta7ActionPerformed(evt);
+                btCanetaVermelhaActionPerformed(evt);
             }
         });
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bef/icons/minus-circle-outline.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bef/icons/plus-circle-outline.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         tfTamanhoPonta.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -366,17 +376,17 @@ public class Editor extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(btCaneta2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btCanetaAmarelo, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btCaneta3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btCanetaVerde, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btCaneta4, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btCanetaBranca, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(btCaneta5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btCanetaAzul, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btCaneta6, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btCanetaPreta, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btCaneta7, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(btCanetaVermelha, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -434,14 +444,14 @@ public class Editor extends javax.swing.JFrame {
                                 .addComponent(btCaneta, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel2Layout.createSequentialGroup()
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btCaneta2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btCaneta3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btCaneta4, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btCanetaAmarelo, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btCanetaVerde, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btCanetaBranca, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btCaneta5, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btCaneta6, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btCaneta7, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(btCanetaAzul, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btCanetaPreta, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btCanetaVermelha, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -849,41 +859,41 @@ public class Editor extends javax.swing.JFrame {
         ResizeImage();
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void btCaneta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCaneta2ActionPerformed
+    private void btCanetaAmareloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCanetaAmareloActionPerformed
         // TODO add your handling code here:
         Geral.corPaint="amarelo";
         btCaneta.setBackground(Color.YELLOW);
-    }//GEN-LAST:event_btCaneta2ActionPerformed
+    }//GEN-LAST:event_btCanetaAmareloActionPerformed
 
-    private void btCaneta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCaneta3ActionPerformed
+    private void btCanetaVerdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCanetaVerdeActionPerformed
         // TODO add your handling code here:
         Geral.corPaint="verde";
         btCaneta.setBackground(Color.GREEN);
-    }//GEN-LAST:event_btCaneta3ActionPerformed
+    }//GEN-LAST:event_btCanetaVerdeActionPerformed
 
-    private void btCaneta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCaneta4ActionPerformed
+    private void btCanetaBrancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCanetaBrancaActionPerformed
         // TODO add your handling code here:
         Geral.corPaint="branco";
         btCaneta.setBackground(Color.WHITE);
-    }//GEN-LAST:event_btCaneta4ActionPerformed
+    }//GEN-LAST:event_btCanetaBrancaActionPerformed
 
-    private void btCaneta5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCaneta5ActionPerformed
+    private void btCanetaAzulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCanetaAzulActionPerformed
         // TODO add your handling code here:
         Geral.corPaint="azul";
         btCaneta.setBackground(Color.BLUE);
-    }//GEN-LAST:event_btCaneta5ActionPerformed
+    }//GEN-LAST:event_btCanetaAzulActionPerformed
 
-    private void btCaneta6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCaneta6ActionPerformed
+    private void btCanetaPretaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCanetaPretaActionPerformed
         // TODO add your handling code here:
         Geral.corPaint="preto";
         btCaneta.setBackground(Color.BLACK);
-    }//GEN-LAST:event_btCaneta6ActionPerformed
+    }//GEN-LAST:event_btCanetaPretaActionPerformed
 
-    private void btCaneta7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCaneta7ActionPerformed
+    private void btCanetaVermelhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCanetaVermelhaActionPerformed
         // TODO add your handling code here:
         Geral.corPaint="vermelho";
         btCaneta.setBackground(Color.RED);
-    }//GEN-LAST:event_btCaneta7ActionPerformed
+    }//GEN-LAST:event_btCanetaVermelhaActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
@@ -915,6 +925,20 @@ public class Editor extends javax.swing.JFrame {
         // TODO add your handling code here:
                 ScaleImage("mais");
     }//GEN-LAST:event_scaleMaisActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Geral.tamanhoPonta+=5;
+        tfTamanhoPonta.setText(Geral.tamanhoPonta+"");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        if(Geral.tamanhoPonta > 5){
+                    Geral.tamanhoPonta-=5;
+                    tfTamanhoPonta.setText(Geral.tamanhoPonta+"");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -965,12 +989,12 @@ public class Editor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btCaneta;
-    private javax.swing.JButton btCaneta2;
-    private javax.swing.JButton btCaneta3;
-    private javax.swing.JButton btCaneta4;
-    private javax.swing.JButton btCaneta5;
-    private javax.swing.JButton btCaneta6;
-    private javax.swing.JButton btCaneta7;
+    private javax.swing.JButton btCanetaAmarelo;
+    private javax.swing.JButton btCanetaAzul;
+    private javax.swing.JButton btCanetaBranca;
+    private javax.swing.JButton btCanetaPreta;
+    private javax.swing.JButton btCanetaVerde;
+    private javax.swing.JButton btCanetaVermelha;
     private javax.swing.JButton btCrop;
     private javax.swing.JButton btFlipH;
     private javax.swing.JButton btFlipV;
