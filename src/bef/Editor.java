@@ -538,6 +538,11 @@ public class Editor extends javax.swing.JFrame {
         });
 
         jMenuItem5.setText("Preto branco");
+        jMenuItem5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuItem5MouseClicked(evt);
+            }
+        });
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
@@ -838,6 +843,8 @@ public class Editor extends javax.swing.JFrame {
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
+            pretoBranco();
+        repaint();
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
@@ -849,6 +856,11 @@ public class Editor extends javax.swing.JFrame {
          pretoBrancofiltro();
         repaint();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem5MouseClicked
+         // TODO add your handling code here:
+         pretoBranco();
+    }//GEN-LAST:event_jMenuItem5MouseClicked
 
     /**
      * @param args the command line arguments
