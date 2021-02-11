@@ -58,8 +58,5 @@ public class Geral {
             return false;
         }
         return false;
-//            lbImagem.setText("");
-////            lbImagem.setIcon(ResizeImage(path));
-//            lbImagem.setIcon(ResizeImageBuffered(path));
     }
 }
