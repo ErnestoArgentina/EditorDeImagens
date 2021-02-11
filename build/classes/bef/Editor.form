@@ -212,18 +212,18 @@
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
-                                              <Component id="btCaneta2" min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="btCanetaAmarelo" min="-2" pref="18" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btCaneta3" min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="btCanetaVerde" min="-2" pref="18" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btCaneta4" min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="btCanetaBranca" min="-2" pref="18" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
-                                              <Component id="btCaneta5" min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="btCanetaAzul" min="-2" pref="18" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btCaneta6" min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="btCanetaPreta" min="-2" pref="18" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btCaneta7" min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="btCanetaVermelha" min="-2" pref="18" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -299,15 +299,15 @@
                                           <Component id="btCaneta" alignment="0" max="32767" attributes="0"/>
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="btCaneta2" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
-                                                  <Component id="btCaneta3" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
-                                                  <Component id="btCaneta4" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="btCanetaAmarelo" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="btCanetaVerde" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="btCanetaBranca" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="-2" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="btCaneta5" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
-                                                  <Component id="btCaneta6" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
-                                                  <Component id="btCaneta7" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="btCanetaAzul" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="btCanetaPreta" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
+                                                  <Component id="btCanetaVermelha" alignment="0" min="-2" pref="19" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -599,7 +599,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="btCaneta2">
+                <Component class="javax.swing.JButton" name="btCanetaAmarelo">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="ff" red="ff" type="rgb"/>
@@ -609,10 +609,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCaneta2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCanetaAmareloActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="btCaneta3">
+                <Component class="javax.swing.JButton" name="btCanetaVerde">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="33" green="cc" red="0" type="rgb"/>
@@ -622,10 +622,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCaneta3ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCanetaVerdeActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="btCaneta4">
+                <Component class="javax.swing.JButton" name="btCanetaBranca">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -635,10 +635,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCaneta4ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCanetaBrancaActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="btCaneta5">
+                <Component class="javax.swing.JButton" name="btCanetaAzul">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="0" red="0" type="rgb"/>
@@ -648,10 +648,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCaneta5ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCanetaAzulActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="btCaneta6">
+                <Component class="javax.swing.JButton" name="btCanetaPreta">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="0" red="0" type="rgb"/>
@@ -661,10 +661,10 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCaneta6ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCanetaPretaActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="btCaneta7">
+                <Component class="javax.swing.JButton" name="btCanetaVermelha">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="0" red="ff" type="rgb"/>
@@ -674,7 +674,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCaneta7ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCanetaVermelhaActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton1">
@@ -686,6 +686,9 @@
                       <Image iconType="3" name="/bef/icons/minus-circle-outline.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton2">
                   <Properties>
@@ -696,6 +699,9 @@
                       <Image iconType="3" name="/bef/icons/plus-circle-outline.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="tfTamanhoPonta">
                   <Events>
