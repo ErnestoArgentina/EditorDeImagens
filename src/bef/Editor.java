@@ -779,7 +779,6 @@ public class Editor extends javax.swing.JFrame {
     private void painelEdicaoImagemMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painelEdicaoImagemMouseMoved
         // TODO add your handling code here:
         repaint();
-        System.out.println("mouse moved");
 
     }//GEN-LAST:event_painelEdicaoImagemMouseMoved
 
@@ -1052,8 +1051,8 @@ public class Editor extends javax.swing.JFrame {
         }
 //        JOptionPane.showMessageDialog(this, Geral.imgbufferedEditada.getHeight());
 //        JOptionPane.showMessageDialog(this, Geral.imgbufferedEditada.getWidth());
+try{
         Image newImage = Geral.imgbufferedEditada.getScaledInstance(w, h, 1);
-        
         Geral.imgbufferedauxiliar = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2ImageAu = Geral.imgbufferedauxiliar.createGraphics();
         g2ImageAu.drawImage(imgbufferedEditada, 0, 0, w, h, Geral.xInicial, Geral.yInicial, Geral.xFinal, Geral.yFinal, this);
@@ -1062,6 +1061,10 @@ public class Editor extends javax.swing.JFrame {
         PainelImagem.g2Image = imgbufferedEditada.createGraphics();
         PainelImagem.g2Image.drawImage(newImage, 0, 0, this);
         repaint(0);
+}catch(Exception e){
+    System.out.println("erro na dimensao");
+}
+        
 
     }
 
